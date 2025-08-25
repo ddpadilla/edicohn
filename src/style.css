@@ -1,0 +1,163 @@
+#name {
+    font-size: 23px;
+}
+
+#navbarNav {
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+#imgLogo {
+    width: 200px;
+    height: auto;
+    margin-right: auto;
+}
+
+#imgs {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+#imgAcerca{
+    background-color: #f8f9fa;
+    height: auto;
+    max-width: 60%;
+    display: block;
+}
+
+
+/* Gradiente sutil para secciones principales */
+.hero-section {
+  background: linear-gradient(135deg, #f8fafc 0%, #e3e9f6 100%);
+}
+
+/* Tarjetas: sombra y borde redondeado más suave */
+.card, .service-card {
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto hover en tarjetas */
+.card:hover, .service-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.15);
+}
+
+/* Botones principales: gradiente y sombra */
+.btn-primary {
+  background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+  border: none;
+  box-shadow: 0 2px 8px 0 rgba(30,60,114,0.10);
+  transition: background 0.3s, transform 0.2s;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+  transform: scale(1.05);
+}
+
+.btn-outline-primary {
+  border-width: 2px;
+  transition: color 0.2s, border-color 0.2s, background 0.2s, transform 0.2s;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+  background: #2a5298;
+  color: #fff;
+  border-color: #2a5298;
+  transform: scale(1.05);
+}
+
+/* Navbar: sombra y transición al hacer scroll */
+.navbar {
+  transition: box-shadow 0.3s, background 0.3s;
+}
+.navbar.scrolled {
+  box-shadow: 0 2px 12px 0 rgba(30,60,114,0.10);
+  background: #fff !important;
+}
+
+/* Footer: animación de entrada y color sutil */
+
+@keyframes fadeInFooter {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Microinteracción en el logo */
+#imgLogo {
+  transition: transform 0.3s;
+}
+#imgLogo:hover {
+  transform: scale(1.08) rotate(-3deg);
+}
+
+.text-shadow {
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7), 0 1px 0 #000;
+}
+
+@media (max-width: 768px) {
+  #inicio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@keyframes kenburns {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+.kenburns {
+  animation: kenburns 7s ease-in-out infinite alternate;
+}
+
+#section2 {
+  padding-top: 1000px;
+}
+
+@keyframes whatsapp-bounce {
+  0%, 100% { transform: translateY(0); }
+  20% { transform: translateY(-8px); }
+  40% { transform: translateY(0); }
+  60% { transform: translateY(-4px); }
+  80% { transform: translateY(0); }
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 32px;
+  right: 32px;
+  z-index: 999;
+  background: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  animation: whatsapp-bounce 2.2s infinite;
+}
+.whatsapp-float:hover, .whatsapp-float:focus {
+  box-shadow: 0 8px 32px rgba(37,211,102,0.25);
+  transform: scale(1.08);
+  outline: none;
+}
+
+.carousel-inner {
+  min-height: 320px;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-inner .carousel-item img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  display: block;
+}

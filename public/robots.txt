@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ediconh.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Allow all content including blog
+Allow: /blog.html
+Allow: /assets/
+Allow: /src/ 
